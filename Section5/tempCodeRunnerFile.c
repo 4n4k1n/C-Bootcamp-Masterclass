@@ -2,26 +2,25 @@
 #define SIZE 5
 
 
-void updateAverage(int *arr, int size, float *average) {
+void averageValue(int *arr, int size, int *average) {
     *average = 0;
     for (int i=0; i<size; i++) {
         *average += arr[i];
     }
-    *average = *average/size;
+    *average /= size;
 }
-
 
 int main() {
     int array[SIZE];
-    float average;
+    int average;
 
     for (int i=0; i<SIZE; i++) {
         printf("Enter a number for the array: ");
         scanf("%d", &array[i]);
     }
 
-    updateAverage(array, SIZE, &average);
-    printf("The average value of the array is: %f", average);
+    averageValue(array, SIZE, &average);
+    printf("The average value of the array is: %d", average);
 
     return 0;
 }
