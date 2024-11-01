@@ -20,7 +20,7 @@
 
 
 int main() {
-    float array[SIZE] = {1.1, 2.2, 3.1};
+    float array[SIZE] = {1.3, 2.2, 3.1};
 
     printf("\n%s", accending(array, SIZE) ? "Accending." : "Not accending.");
 
